@@ -88,6 +88,12 @@
     <Reference Include="Gjallarhorn.Bindable.XamarinForms">
       <HintPath>..\..\Gjallarhorn\src\Gjallarhorn.Bindable.XamarinForms\bin\Debug\Gjallarhorn.Bindable.XamarinForms.dll</HintPath>
     </Reference>
+    <Reference Include="Gjallarhorn.Bindable">
+      <HintPath>..\GjallarhornLibs\Gjallarhorn.Bindable.dll</HintPath>
+    </Reference>
+    <Reference Include="Gjallarhorn">
+      <HintPath>..\GjallarhornLibs\Gjallarhorn.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\layout\" />

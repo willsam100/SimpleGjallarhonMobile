@@ -99,10 +99,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Gjallarhorn\src\Gjallarhorn.Bindable\Gjallarhorn.Bindable.fsproj">
-      <Project>{DC46E916-06FC-4256-ACFC-EBC7C9DC95EA}</Project>
-      <Name>Gjallarhorn.Bindable</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Gjallarhorn.Core\Gjallarhorn.Core.fsproj">
       <Project>{396610C3-5EFF-46F9-8A0A-E8AE516387E3}</Project>
       <Name>Gjallarhorn.Core</Name>

@@ -43,6 +43,15 @@
     <Reference Include="Xamarin.Forms.Xaml">
       <HintPath>..\packages\Xamarin.Forms.2.3.3.193\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.Xaml.dll</HintPath>
     </Reference>
+    <Reference Include="Gjallarhorn.Bindable">
+      <HintPath>..\GjallarhornLibs\Gjallarhorn.Bindable.dll</HintPath>
+    </Reference>
+    <Reference Include="Gjallarhorn.Bindable.XamarinForms">
+      <HintPath>..\GjallarhornLibs\Gjallarhorn.Bindable.XamarinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Gjallarhorn">
+      <HintPath>..\GjallarhornLibs\Gjallarhorn.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyInfo.fs" />
@@ -55,16 +64,6 @@
       <IncludeInPackage>false</IncludeInPackage>
     </EmbeddedResource>
     <Compile Include="App.fs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\Gjallarhorn\src\Gjallarhorn.Bindable\Gjallarhorn.Bindable.fsproj">
-      <Project>{DC46E916-06FC-4256-ACFC-EBC7C9DC95EA}</Project>
-      <Name>Gjallarhorn.Bindable</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Gjallarhorn\src\Gjallarhorn\Gjallarhorn.fsproj">
-      <Project>{41FAB705-05F3-45AE-99EF-524E6D9736FF}</Project>
-      <Name>Gjallarhorn</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\FSharp\Microsoft.Portable.FSharp.Targets" />
   <Import Project="..\packages\Xamarin.Forms.2.3.3.193\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.3.3.193\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />

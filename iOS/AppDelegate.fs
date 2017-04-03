@@ -5,7 +5,6 @@ open UIKit
 open Foundation
 open Xamarin.Forms
 open Xamarin.Forms.Platform.iOS
-open Gjallarhorn.XamarinForms
 
 [<Register ("AppDelegate")>] 
 type AppDelegate () =
@@ -13,10 +12,7 @@ type AppDelegate () =
 
     override this.FinishedLaunching (app, options) =
         Forms.Init()
-        let program = Gjallarhorn.Core.Program.applicationCore
-        let view = Gjallarhorn.Core.MainPage()
-        let info = Framework.createApplicationInfo program view
-        base.LoadApplication(info.CreateApp())
+        base.LoadApplication(Gjallarhorn.Core.Program.App())
         base.FinishedLaunching(app, options)
 
 module Main =

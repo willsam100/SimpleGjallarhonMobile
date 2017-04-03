@@ -17,10 +17,5 @@ type MainActivity() =
         base.OnCreate (bundle)
 
         Xamarin.Forms.Forms.Init (this, bundle)
-
-        let program = Gjallarhorn.Core.Program.applicationCore
-        let view = Gjallarhorn.Core.MainPage()
-
-        let info = Framework.createApplicationInfo program view
-        base.LoadApplication(info.CreateApp())
+        base.LoadApplication(Gjallarhorn.Core.Program.App())
 

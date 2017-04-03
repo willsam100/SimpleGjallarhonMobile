@@ -2,7 +2,6 @@
 
 open Xamarin.Forms
 open Xamarin.Forms.Xaml
-open System.Reflection
 
 type MainPage() =
     inherit ContentPage()

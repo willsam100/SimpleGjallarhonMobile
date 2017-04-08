@@ -1,9 +1,7 @@
 ﻿module Gjallarhorn.Core.Program
 
-open Xamarin.Forms
 open Xamarin.Forms.Xaml
 
-open System
 open Gjallarhorn
 open Gjallarhorn.Bindable
 
